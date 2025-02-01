@@ -8,8 +8,6 @@ switch (number) {
         alert ('Вы ввели число 2');    
     break;
     case "3":
-        alert ('Вы ввели число 3, а может и 4');    
-    break;
     case "4":
         alert ('Вы ввели число 3, а может и 4');    
     break;

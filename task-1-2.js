@@ -1,2 +1,2 @@
-let message = "Привет, Мир";
+const message = "Привет, Мир";
 alert(message);

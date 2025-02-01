@@ -1,6 +1,6 @@
-let a = prompt("Введите а:");
-let b = prompt("Введите b:");
-let c = prompt("Введите c:");
+let a = +prompt("Введите а:");
+let b = +prompt("Введите b:");
+let c = +prompt("Введите c:");
 let d = b**2-4*a*c;
 if (d < 0) {
     console.log("Корней нет");
