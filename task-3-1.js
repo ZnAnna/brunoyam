@@ -1,6 +1,6 @@
-let interestRate = Number(prompt("Процентная ставка: "));
-let firstSum = Number(prompt("Сумма первоначального взноса"));
-let creditSum = Number(prompt("Сумма кредита"));
+let interestRate = +prompt("Процентная ставка: ");
+let firstSum = +prompt("Сумма первоначального взноса");
+let creditSum = +prompt("Сумма кредита");
 let dateFinishCredit = new Date(prompt("Дата окончания кредита в формате ГГГГ.ММ.ДД"));
 let today = new Date();
 let bodyCredit = creditSum - firstSum; // тело кредита
