@@ -1,15 +1,5 @@
-let a = +prompt("Введите а:");
-let b = +prompt("Введите b:");
-let c = +prompt("Введите c:");
-let d = b**2-4*a*c;
-if (d < 0) {
-    console.log("Корней нет");
-} else if (d === 0) {
-   let d = -b/(2*a);
-   console.log(d);
-} else if (d > 0) {
-    let d1 = (-b + Math.sqrt(d))/(2*a);
-    let d2 = (-b - Math.sqrt(d))/(2*a);
-    console.log(d1);
-    console.log(d2);
+const numbers = [100, -5, 200, 0, 50, -150, 20];
+for (let i = 0; i < numbers.length; i++) {
+    numbers[i] += 50;   
 }
+console.log(numbers);

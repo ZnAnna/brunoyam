@@ -1,6 +1,6 @@
-let test = 0;
-if (test > 10) {
-    console.log ("Верно");
-} else {
-    console.log ("Неверно");
+const numbers = [100, -5, 200, 0, 50, -150, 20];
+for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] > 0) {
+        console.log(numbers[i]);
+    } 
 }

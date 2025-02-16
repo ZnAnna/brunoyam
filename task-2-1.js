@@ -1,25 +1,12 @@
-let trueAnswer = 0;
-let answer1 = prompt("Какое сейчас время года?");
-
-if (answer1.toLowerCase() === "зима" && trueAnswer == 0) {
-    trueAnswer++;
-    alert("Правильный ответ");
-} else {
-    alert("Неправильный ответ");
+let films = ["3 Билборда на границе Эббинга, Миссури", "Король говорит", "Гран Торино", "Город Проклятых", "Титаник", "Хатико"];
+let userAnswer = [];
+for (let i = 0; i < films.length; i++) {
+     question = confirm(`Смотрели ли вы "${films[i]}"?`);
+        if (question == true) {
+            userAnswer.push(`${films[i]}: Да\n`);                   
+        } else {
+            userAnswer.push(`${films[i]}: Нет\n`);  
+        }
 }
-
-let answer2 = +prompt("Сколько углов у круга?");
-if (answer2 === 0) {
-    trueAnswer++;
-    alert("Правильный ответ");
-} else {
-    alert("Неправильный ответ");
-}
-
-let answer3 = +prompt("Угадай число от 3 до 8");
-if (answer3 === 8) {
-    trueAnswer++;
-    alert("Правильный ответ. Вы ответили на все вопросы");
-} else {
-    alert("Неправильный ответ. Количество верных ответов: " + trueAnswer);
-}
+alert(userAnswer);
+// не могу убрать запятую перед наименованием фильма и пронумеровать список

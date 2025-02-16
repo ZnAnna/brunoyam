@@ -1,4 +1,5 @@
-let num1 = 10;
-alert(num1);
-num1 = 20;
-alert(num1);
+persons.shift();
+persons.push("Иван Петров", "Дима Тихонов");
+persons.pop();
+persons.unshift("Дима Тихонов");
+// console.log(persons);

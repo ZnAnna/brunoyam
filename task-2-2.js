@@ -1,24 +1,32 @@
-const randomNumber = Math.floor(Math.random() * 10) + 1;
-let tries = 0;
-let userAnswer = Number(prompt("Введите загаданное от 1 до 10 число:"));
-
-
-if (randomNumber === userAnswer && tries === 0) {
-    alert("Вы угадали");
-} else {
-    userAnswer = Number(prompt("Неправильный ответ. Введите загаданное от 1 до 10 число:"));
-    tries++;
-
-    if (randomNumber === userAnswer && tries === 1) {
-    alert("Вы угадали");
-    } else {
-    userAnswer = Number(prompt("Неправильный ответ. Осталась 1 попытка"));
-    tries++;
-    
-        if (randomNumber === userAnswer && tries === 2) {
-        alert("Вы угадали");
-        } else {
-        alert("Вы проиграли. Загаданное число: " + randomNumber);
+const sums = [
+    [1, 5, 6],
+    [7, 2, 4, 6],
+    [7, 10, 1],
+    [1, 3]
+    ];
+    let max = null;
+    let min = null;
+    let average = null;
+    let sum = 0;
+for (let i = 0; i < sums.length; i++) {
+   const innerArray = sums[i];
+   let matrixSum = 0;
+    for (let j = 0; j < innerArray.length; j++) {
+        matrixSum += innerArray[j];
         }
-    }    
-}
+    if (matrixSum > max) {
+        max = matrixSum;
+    }
+    if (min === null) {
+       min = matrixSum; 
+    }
+    if (matrixSum < min) {
+        min = matrixSum;
+    }
+    sum += matrixSum;
+
+}   
+average = sum / sums.length;
+console.log(max);
+console.log(min);
+console.log(average);
