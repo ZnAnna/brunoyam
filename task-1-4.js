@@ -1,6 +1,9 @@
-const numbers = [100, 200, 50, 20];
-let sum = 0;
-for (let i = 0; i < numbers.length; i++) {
-    sum += numbers[i];
-}
-console.log(sum);
+function reverseStr(str) {
+    let newString = str.split('').reverse().join('');
+    return newString;
+  }
+  
+  // Примеры использования
+  console.log (reverseStr("привет")) // => "тевирп"
+  console.log (reverseStr("мир")) // => "рим"
+  console.log (reverseStr("моё имя ваня")) // => "янав ями ёом"
