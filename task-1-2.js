@@ -1,15 +1,8 @@
-function getDigitsSum(num) {
-    let sum = 0;
-    let arr = num.toString().split("").map(Number);
-    for (let i = 0; i < arr.length; i++) {
-        sum += arr[i];
-        
-    }
-    return sum;
-        
-}
+const elem1 = document.querySelector('#elem1');
+const elem2 = document.querySelector('#elem2');
+const elem3 = document.querySelector('#elem3');
 
-// Примеры использования
-console.log(getDigitsSum(251)) // => 8
-console.log(getDigitsSum(100)) // => 1
-console.log(getDigitsSum(16)) // => 7
+console.log(elem1);
+console.log(elem2);
+console.log(elem3);
+
