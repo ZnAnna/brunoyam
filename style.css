@@ -1,0 +1,23 @@
+#sidebar{
+    position: absolute; 
+    top: 20px;
+    left: -250px;
+    transition: left 0.3s;
+}
+#sidebar ul {
+    list-style: none;
+  }
+
+#sidebar.open {
+    top: 20px;
+    left: 0;
+  }  
+
+#square {
+  width: 120px;
+  height: 120px;
+  background-color: black;
+  position: relative;
+  left: 0;
+  top: 100px;
+}

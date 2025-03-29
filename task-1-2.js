@@ -1,8 +1,14 @@
-const elem1 = document.querySelector('#elem1');
-const elem2 = document.querySelector('#elem2');
-const elem3 = document.querySelector('#elem3');
-
-console.log(elem1);
-console.log(elem2);
-console.log(elem3);
-
+const square = document.getElementById('square');
+const keyframes = [
+    {transform: 'translateX(0)'},
+    {transform: 'translateX(400px)'},
+    {transform: 'translateX(400px)'},
+  ];
+  
+  const timing = {
+    duration: 3000,
+    iterations: 1,
+    direction: 'alternate',
+  };
+  
+  const animation = document.getElementById('square').animate(keyframes, timing);
